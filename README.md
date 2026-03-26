@@ -2,6 +2,15 @@
 
 A research project for **Co-Location Testing (CLT)** that determines whether two or more mobile devices are in the same physical location by comparing their magnetometer sensor readings using autoencoders.
 
+## Publication
+
+This repository contains the implementation for the following paper:
+
+> **An Unsupervised Learning-Based Spatial Co-Location Detection System from Low-Power Consumption Sensor**
+> David Ishak Kosasih, Byung-Gook Lee, Hyotaek Lim, Mohammed Atiquzzaman
+> *Sensors*, Volume 21, Issue 14, Article 4773, 2021
+> DOI: [10.3390/s21144773](https://doi.org/10.3390/s21144773)
+
 ## Overview
 
 The core idea is to train an autoencoder on one device's magnetometer signal from a known location/time window, then test reconstruction on another device's data. **Low reconstruction error (MSE)** indicates the devices are co-located, while **high reconstruction error** indicates they are at different locations.
